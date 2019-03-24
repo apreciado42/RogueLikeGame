@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5504582638868389277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5504582638868389278}
+  - component: {fileID: 5504582638868389279}
+  - component: {fileID: 5504582638868389276}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5504582638868389278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5504582638868389277}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5504582638868389279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5504582638868389277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82eac808b0d574340b1ff24fa2b78930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardScript: {fileID: 0}
+--- !u!114 &5504582638868389276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5504582638868389277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4898cd6ebbec4d49ac12f41e7fc5362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columns: 8
+  rows: 8
+  wallCount:
+    minimum: 5
+    maximum: 9
+  foodCount:
+    minimum: 1
+    maximum: 5
+  exit: {fileID: 553880717940497010, guid: ff784e871cc30d741a19b17afcdfe9f5, type: 3}
+  floorTiles:
+  - {fileID: 4934625796745862793, guid: b768394b65d9f6d458f2a55f5c3c84a3, type: 3}
+  - {fileID: 2925428506770788364, guid: 4ec7d76bbacf1594a8a0c86fb7cc6d1f, type: 3}
+  - {fileID: 1623568172519717562, guid: a376a73c501781846aa09fd3acb9f60d, type: 3}
+  - {fileID: 7423739209764492066, guid: 4fadcfbffc72aec4b8e1d72ddaab8bfb, type: 3}
+  - {fileID: 7200832052526024051, guid: 6512f6de5eb23f54d91ca09388d95b18, type: 3}
+  - {fileID: 7720209823540189741, guid: c2efcc4d54ef2154a8d893f1737b6822, type: 3}
+  - {fileID: 8867098413020931802, guid: a23ef83a1e5163145844feeb45b8a76d, type: 3}
+  - {fileID: 629834699447124488, guid: c42d29106b1226d4697a02c0f3a89fdf, type: 3}
+  wallTiles:
+  - {fileID: 188697765482663443, guid: 396fa5d5b4688e5428360f516251678f, type: 3}
+  - {fileID: 4317730103558375317, guid: 9a6ac365490e29145b98c7dcf23fa774, type: 3}
+  - {fileID: 8433419312585864744, guid: dfe3c7d89ba94c5439aee065fa69cac3, type: 3}
+  - {fileID: 167658094030424252, guid: f5fef09bf4c5475478bd73c0c6818974, type: 3}
+  - {fileID: 5724850190827816554, guid: 7c5c78d14a405e946ba13f344179ac2c, type: 3}
+  - {fileID: 5105025047376602700, guid: ca1b829ee123fc64fa0ae73002cadf50, type: 3}
+  - {fileID: 8306017627328861866, guid: 5700c599d0776b84c82448668190a4f8, type: 3}
+  - {fileID: 8236955795248446111, guid: 671d7109251c5984485446868fe6a20a, type: 3}
+  - {fileID: 1653230680209211841, guid: e41f9b64e0c70094cac2a52cdff6b850, type: 3}
+  foodTiles:
+  - {fileID: 6543566013796078103, guid: 6b9cb2fd1fe263d4887a875afb58f2f7, type: 3}
+  - {fileID: 2904643990059527053, guid: 9967098235fe8094b925eb742327e168, type: 3}
+  enemyTiles:
+  - {fileID: 7936810969352852561, guid: 9a4d4e0b3920ef1409a1c59c58daa42f, type: 3}
+  - {fileID: 5349839072485956390, guid: ee0da0b2fea5df642ac5e8923ad99762, type: 3}
+  outerWallTiles:
+  - {fileID: 2509497975255607513, guid: a92f6e9220005e74ebab862352618c92, type: 3}
+  - {fileID: 103187972001739785, guid: b3016195fc9422449bc3ac97fdbf706d, type: 3}
+  - {fileID: 2258025776460662863, guid: 723fc04a2b457cd4d9d758ca7b39fc4c, type: 3}
